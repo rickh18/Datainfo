@@ -1,4 +1,4 @@
-SELECT * FROM Person p, Writes w, Movie m
+SELECT p.name FROM Person p, Writes w, Movie m
 	WHERE p.pid = w.pid
 	AND  m.mid = w.mid
 	AND NOT EXISTS(
