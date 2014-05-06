@@ -1,2 +1,6 @@
 SELECT p.pid FROM Person p
-WHERE 'p is an writer of an movie without director';
+	WHERE (
+		SELECT * FROM Writes w
+		WHERE w.pid = p.pid
+		AND 'movie has no director'
+	);
