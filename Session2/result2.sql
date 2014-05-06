@@ -3,3 +3,9 @@ INSERT INTO F VALUES
 	('E','D', TRUE,'D->A, AED'),
 	('D','A', TRUE,'DA, ');
 
+INSERT INTO F1 VALUES
+	('E','D', FALSE,'');
+	
+INSERT INTO F2 VALUES
+	('ABC','EF',FALSE,'E->D, ABCDEF'),
+	('D','A', TRUE,'DA, ');
